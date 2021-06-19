@@ -24,8 +24,8 @@ plt.rcParams['axes.unicode_minus'] = False   #用来正常显示负号
 
 
 #---------------------加载数据-------------------------
-train_data = pd.read_csv('d_train_20180102.csv', encoding='gb18030')
-test_data = pd.read_csv('d_test_A_20180102.csv', encoding='gb18030')
+train_data = pd.read_csv('data/d_train_20180102.csv', encoding='gb18030')
+test_data = pd.read_csv('data/d_test_A_20180102.csv', encoding='gb18030')
 test_data['血糖'] = -1
 data = pd.concat([train_data, test_data], ignore_index=True)
 
